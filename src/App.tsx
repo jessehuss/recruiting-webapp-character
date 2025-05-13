@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { ATTRIBUTE_LIST } from './consts';
 import CharacterCard from './components/CharacterCard';
+import PartySkillCheck from './components/PartySkillCheck';
 import { saveCharacters, fetchCharacters } from './services/characterService';
 
 interface Character {
@@ -102,7 +103,7 @@ function App() {
       setIsResetting(false);
     }
   };
-
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -134,6 +135,9 @@ function App() {
           </div>
         </div>
       </header>
+      <div className="characters-container">
+        <PartySkillCheck characters={characters} />
+      </div>
       <div className="characters-container">
         {characters.map((character, index) => (
           <CharacterCard

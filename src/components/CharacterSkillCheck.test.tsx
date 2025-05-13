@@ -1,6 +1,5 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import CharacterSkillCheck from './CharacterSkillCheck';
-import { SKILL_LIST } from '../consts';
 
 // Mock Math.random to return a predictable value
 const mockMath = Object.create(global.Math);

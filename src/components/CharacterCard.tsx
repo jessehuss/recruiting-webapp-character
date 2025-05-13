@@ -34,10 +34,12 @@ const CharacterCard = ({ character, onAttributeChange, onSkillsChange, onDelete 
           Delete
         </button>
       </div>
-      <CharacterSkillCheck
-        attributes={character.attributes}
-        skills={character.skills}
-      />
+      <div className="characters-container">
+        <CharacterSkillCheck
+          attributes={character.attributes}
+          skills={character.skills}
+        />
+      </div>
       <div className="character-card-content">
         <CharacterAttributes 
           attributes={character.attributes}
