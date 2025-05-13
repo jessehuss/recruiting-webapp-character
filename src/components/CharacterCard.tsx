@@ -1,4 +1,3 @@
-import { ATTRIBUTE_LIST } from '../consts';
 import CharacterAttributes from './CharacterAttributes';
 import CharacterClasses from './CharacterClasses';
 import CharacterSkills from './CharacterSkills';
